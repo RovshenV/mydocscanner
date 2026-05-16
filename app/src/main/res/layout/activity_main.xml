@@ -1,73 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical">
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <TextView
+    android:background="#F8FAFC"> <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/label_mode_selector" />
-    <Spinner
-        android:id="@+id/mode_selector"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-  </LinearLayout>
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_enable_gallery_import" />
-    <CheckBox
-        android:id="@+id/enable_gallery_import"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onEnableGalleryImportCheckboxClicked"
-        android:checked="true"
-        android:text="" />
-  </LinearLayout>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_mlkit" /> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Smart Scanner"
+            android:textColor="#0F172A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_set_page_limit" />
-    <EditText
-        android:id="@+id/page_limit_input"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:autofillHints="" />
- </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Digitize your documents with a single click"
+            android:textColor="#64748B"
+            android:textSize="16sp" />
+    </LinearLayout>
 
-  <Button
-      android:id="@+id/scan_button"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:onClick="onScanButtonClicked"
-      android:text="@string/scan_button" />
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:backgroundTint="#3B82F6"
+        android:text="BELGEYİ TARA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:elevation="6dp" />
 
-  <TextView
-      android:id="@+id/result_info"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="" />
-
-  <ImageView
-      android:id="@+id/first_page_view"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:contentDescription="@string/first_page_view"
-      android:scaleType="fitCenter" />
-</LinearLayout>
+</RelativeLayout>
