@@ -18,7 +18,7 @@
         android:value="document_ui"/>
 
     <activity
-        android:name=".EntryChoiceActivity"
+        android:name=".kotlin.MainActivity"
         android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -27,11 +27,11 @@
     </activity>
 
     <activity
-        android:name=".java.MainActivity"
+        android:name=".EntryChoiceActivity"
         android:exported="false" />
 
     <activity
-        android:name=".kotlin.MainActivity"
+        android:name=".java.MainActivity"
         android:exported="false" />
 
     <provider
